@@ -1,0 +1,7 @@
+{
+  "name": "WaraHatkaXoBaa",
+  "description": "A modern, responsive anonymous chat platform for freedom of expression with zero persistent data.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

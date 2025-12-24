@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import ChatPage from './pages/ChatPage';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import TermsOfUse from './pages/TermsOfUse';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import { UserPreferences, Gender, ChatType } from './types';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage.tsx';
+import ChatPage from './pages/ChatPage.tsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
+import TermsOfUse from './pages/TermsOfUse.tsx';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
+import { UserPreferences, Gender, ChatType } from './types.ts';
 
 const App: React.FC = () => {
   const [preferences, setPreferences] = useState<UserPreferences>({
@@ -18,7 +18,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-slate-950">
         <Header />
         <main className="flex-grow flex flex-col">
           <Routes>
